@@ -552,6 +552,8 @@ test="#"+topicSelected;
 
 	            if (topicSelected=="EarnQual")
 	              return  d.Country+ " (" + format(d.value) + " USD"+")";
+	            else if (topicSelected=="UnEmpCostGDP")
+	              return  d.Country+ " (" + format(d.value) + " p.p."+")";
 	            else if  (topicSelected=="EmplGap")
 	              return  d.Country+ " (" + format(d.value) + "%"+")";
 	            else if  (topicSelected=="Unemp" && d.value == minValue)
@@ -610,6 +612,8 @@ test="#"+topicSelected;
 		        .text(function(){
 	            if (topicSelected=="EarnQual")
 	              return format(d.value) + " USD";
+	            else if (topicSelected=="UnEmpCostGDP")
+	              return format(d.value) + " p.p.";
 	            else if  (topicSelected=="EmplGap")
 	              return format(d.value) + "%";
 	            else
